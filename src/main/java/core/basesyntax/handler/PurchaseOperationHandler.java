@@ -1,6 +1,5 @@
 package core.basesyntax.handler;
 
-import core.basesyntax.handler.OperationHandler;
 import core.basesyntax.model.FruitTransaction;
 import core.basesyntax.storage.Storage;
 

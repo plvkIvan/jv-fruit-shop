@@ -19,6 +19,10 @@ public class Storage {
     }
 
     public static void subtract(String fruit, Integer quantity) {
+        if (storage.getOrDefault(fruit, 0) < quantity) {
+            throw new IllegalArgumentException("Not enough " + fruit + " in storage");
+        }
+
         storage.put(fruit, storage.getOrDefault(fruit, 0) - quantity);
     }
 }
